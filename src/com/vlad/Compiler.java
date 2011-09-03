@@ -54,7 +54,7 @@ public class Compiler {
 		printWriter.close();
 	}
 
-	public static String readAllText(File file) throws Exception {
+	private static String readAllText(File file) throws Exception {
 		StringBuilder stringBuilder = new StringBuilder(512);
 		BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
 		String line;
